@@ -1,0 +1,27 @@
+:root {
+    --mainColor:#606b56 ;
+    --secondaryColor: #515a48;
+    --mainText:#fff;
+    --secondaryText: #eeeeee;
+    --borderColor: #c1c1c1;
+    --themeDotBorder:#fff;
+    --previewGb:rgba(21, 32, 25, 0.8);
+    --previewShadow:#606b56 ;
+    --btnColor:#606b56;
+}
+
+#para {
+    color:whitesmoke ;
+}
+
+.about_me p{color:whitesmoke ;
+
+}
+
+.social_link  #para1{
+    color:whitesmoke ;
+}
+
+#previw p{
+     color:whitesmoke ;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewpoint" content="width=device-width" ,initial-scale=1.0>
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link id="light_theme" rel="stylesheet" href="">
+    
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Rubik+Wet+Paint&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="s1">
+        <div class="main_container">
+            <div class="greeding_wrapper">
+                <h1>Hi I'm David Onyango</h1>
+            </div>
+
+            <div class="intro_wrapper">
+                <div class="nav_wrapper">
+                    <div class="dots_wrapper">
+                        <div id="dot1" class="dot"> </div>
+                        <div id="dot2" class="dot"> </div>
+                        <div id="dot3" class="dot"> </div>
+                    </div>
+
+                    <ul id="navigation">
+                        <li> <a href="contact">contact</a></li>
+                    </ul>
+                </div>
+                <div class="left_column">
+                    <img id="profile_pic" src="/static/IMG_20220111_165502.jpg" alt="">
+                    <h5> Personalize theme</h5>
+                    <div id="theme_dot">
+                        <div data-mode="light" id="light_theme" class="theme"></div>
+                        <div data-mode="blue"  id="purple_theme" class="theme"></div>
+                        <div data-mode="purple"  id="blue_theme" class="theme"></div>
+                        <div data-mode="green"  id="green_theme" class="theme"></div>
+                    </div>
+
+                    <p id="para">click to change your desired theme </p>
+
+                </div>
+                <div class="right_column">
+                    <div id="previewShadow">
+                        <div id="previw">
+                            <div id="corner_tl" class="corner"></div>
+                            <div id="corner_tr" class="corner"></div>
+                            <h3>What I do</h3>
+                            <p> I am a fronted developer </p>
+                            <div id="corner_bl" class="corner"></div>
+                            <div id="corner_br" class="corner"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main_container">
+            <div class="about_wrapper">
+                <div class="about_me">
+                    <h4>More about me </h4>
+
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Ut commodi excepturi consequatur placeat eveniet modi. Dicta, quibusdam harum vel
+                        accusantium nostrum quaerat voluptatum cum? Nihil sed tempora eligendi porro nemo?</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo a fuga labore nesciunt quod nam officiis eum temporibus ipsa non et
+                        impedit tempore expedita corrupti repellendus consequuntur, numquam omnis cumque.</p>
+
+
+                    <hr>
+                    <h4> Technical skills</h4>
+                    <p>Fronted delevoper looking forward to exploring IOT(internet of things):
+                        <a target="_blank" href="https://davidclintoo.netlify.app/">Dowloard resume</a>
+                    </p>
+
+                    <div class="skill">
+                        <ul>
+                            <li>Python </li>
+
+                            <li>Javascript</li>
+                            <li>Html</li>
+
+
+                        </ul>
+                        <ul>
+
+                            <li>CSS</li>
+                            <li>Bootsrap</li>
+                            <li>Postgress</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social_link">
+                    <h3 id="projects">some of my past prject</h3>
+                    <img id="img_link" src="/static/Screenshot_2022-04-11-11-56-54-54.jpg" alt="">
+                    <p id="para1"> A website for a young focused students </p>
+                    <p id="para1">For more information: <a target="_blank" href="http://visiona.herokuapp.com">click
+                            here </a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="s1">
+        <div class="main_container">
+                <h3 id="form_h">Get in touch</h3>
+                <form id="form" action="{{ url_for('index') }}" , method="POST">
+                    <label for="exampleInputname1" >Name</label>
+                    <input  class="text_input" placeholder="name" type="text" name="name" id="exampleInputname1">
+
+                    <label for="exampleInputsubject" >Subject</label>
+                    <input  class="text_input" placeholder="subject"  type="text" name="subject" id="exampleInputsubject">
+
+                    <label for="exampleInputemail" >Email</label>
+                    <input  class="text_input" placeholder="email" type="text" name="email" id="exampleInputemail" >
+
+                    
+                    <label for="exampleInputmessage" >Message</label>
+                    <textarea  class="text_input"  name="message"  id="exampleInputmessage" ></textarea>
+
+                    <!-- <input id="submit_btn" type="submit" value="send"> -->
+                    <button  id="submit_btn" type="submit" class="bt ">send</button>
+
+                </form>
+
+
+        </div>
+    </section>
+
+  <script src="/static/script.js">
+
+  </script>
+
+</body>
+
+</html>
