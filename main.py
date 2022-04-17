@@ -18,8 +18,8 @@ import secrets
 app=Flask(__name__)
 
 app.config['SECRET_KEY'] = 'clintoo678david0000'
-#conn=psycopg2.connect("dbname='duka' user='postgres' host='localhost' password='5132'")
-conn=psycopg2.connect("dbname='d1m8odf2nbe0jt' user='idlxsyofckzrsu' port='5432 ' host='ec2-52-30-133-191.eu-west-1.compute.amazonaws.com' password='377cc0aab4454edd009635c4786b072f4e75ef0d07fc222ff7020a6c6d950a4a'")
+conn=psycopg2.connect("dbname='duka' user='postgres' host='localhost' password='5132'")
+#conn=psycopg2.connect("dbname='d1m8odf2nbe0jt' user='idlxsyofckzrsu' port='5432 ' host='ec2-52-30-133-191.eu-west-1.compute.amazonaws.com' password='377cc0aab4454edd009635c4786b072f4e75ef0d07fc222ff7020a6c6d950a4a'")
 
 
 @app.route('/')
@@ -27,7 +27,7 @@ conn=psycopg2.connect("dbname='d1m8odf2nbe0jt' user='idlxsyofckzrsu' port='5432 
 
 @app.route("/index", methods=['GET','POST']) 
 def index():
-    if request.method=='post' and 'name'in request.form and 'subject' in request.form and 'email' in request.form and 'message' in request.form:
+    if request.method=='post' :
        cur=conn.cursor()
 
        name=request.form['name']
@@ -36,12 +36,12 @@ def index():
        message=request.form['message']
 
        rows=[name,subject,email,message]
-       quary=("INSERT INTO public.accounts( name, subject, email, message)VALUES ( %s, %s, %s, %s)")
+       quary=("INSERT INTO accounts( name, subject, email, message) VALUES( %s, %s, %s, %s)")
        cur.execute(rows,quary)
 
        conn.commit()
 
-    return render_template ('index.html' , )
+    return render_template ('index.html'  )
     
 
 if __name__ == '__main__':

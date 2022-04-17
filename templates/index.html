@@ -7,12 +7,12 @@
     <title>My portfolio</title>
     <link rel="stylesheet" href="/static/style.css">
     <link id="light_theme" rel="stylesheet" href="">
-    
+
 
 
     <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
 
-  
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,17 +37,17 @@
                     </div>
 
                     <ul id="navigation">
-                        <li> <a href="contact">contact</a></li>
+                        <li> Welcome</li>
                     </ul>
                 </div>
                 <div class="left_column">
                     <img id="profile_pic" src="/static/IMG_20220111_165502.jpg" alt="">
-                    <h5> Personalize theme</h5>
+                    <h5> change your favorite theme </h5>
                     <div id="theme_dot">
                         <div data-mode="light" id="light_theme" class="theme"></div>
-                        <div data-mode="blue"  id="purple_theme" class="theme"></div>
-                        <div data-mode="purple"  id="blue_theme" class="theme"></div>
-                        <div data-mode="green"  id="green_theme" class="theme"></div>
+                        <div data-mode="blue" id="purple_theme" class="theme"></div>
+                        <div data-mode="purple" id="blue_theme" class="theme"></div>
+                        <div data-mode="green" id="green_theme" class="theme"></div>
                     </div>
 
                     <p id="para">click to change your desired theme </p>
@@ -59,7 +59,9 @@
                             <div id="corner_tl" class="corner"></div>
                             <div id="corner_tr" class="corner"></div>
                             <h3>What I do</h3>
-                            <p> I am a fronted developer </p>
+                            <p> I am a junior front end developer 
+                                and a student at technical University  of Kenya pursueing Mechanical Engineering
+                            </p>
                             <div id="corner_bl" class="corner"></div>
                             <div id="corner_br" class="corner"></div>
                         </div>
@@ -77,19 +79,20 @@
                 <div class="about_me">
                     <h4>More about me </h4>
 
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Ut commodi excepturi consequatur placeat eveniet modi. Dicta, quibusdam harum vel
-                        accusantium nostrum quaerat voluptatum cum? Nihil sed tempora eligendi porro nemo?</p>
+                    <p> Currently, I am  a Student at Technical University of kenya pursueing Mechanical Engineering
+                        .Apart from Mechanical Engineering I am also a software engineer.</p>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Explicabo a fuga labore nesciunt quod nam officiis eum temporibus ipsa non et
-                        impedit tempore expedita corrupti repellendus consequuntur, numquam omnis cumque.</p>
+                    <p>One of the reason I venture into software Engineering is to combine the knowledge of
+                        mechanical engineering and software so as to explore the world of technology
+                        .As far as technology is concerned , the world is dorminated by technology which make
+                        work easier and intereting.And being able to manupulate between software and hardware
+                     is just advantagious.</p>
 
 
                     <hr>
                     <h4> Technical skills</h4>
                     <p>Fronted delevoper looking forward to exploring IOT(internet of things):
-                        <a target="_blank" href="https://davidclintoo.netlify.app/">Dowloard resume</a>
+                        <a target="_blank" href="https://davidclintoo.netlify.app/">Downloard resume</a>
                     </p>
 
                     <div class="skill">
@@ -98,6 +101,7 @@
 
                             <li>Javascript</li>
                             <li>Html</li>
+                            <li>Github</li>
 
 
                         </ul>
@@ -106,13 +110,14 @@
                             <li>CSS</li>
                             <li>Bootsrap</li>
                             <li>Postgress</li>
+                            <li>Heroku</li>
 
                         </ul>
                     </div>
                 </div>
 
                 <div class="social_link">
-                    <h3 id="projects">some of my past prject</h3>
+                    <h3 id="projects">Some of my past prject</h3>
                     <img id="img_link" src="/static/Screenshot_2022-04-11-11-56-54-54.jpg" alt="">
                     <p id="para1"> A website for a young focused students </p>
                     <p id="para1">For more information: <a target="_blank" href="http://visiona.herokuapp.com">click
@@ -124,33 +129,33 @@
     </section>
     <section class="s1">
         <div class="main_container">
-                <h3 id="form_h">Get in touch</h3>
-                <form id="form" action="{{ url_for('index') }}" , method="POST">
-                    <label for="exampleInputname1" >Name</label>
-                    <input  class="text_input" placeholder="name" type="text" name="name" id="exampleInputname1">
+            <h3 id="form_h">Get in touch</h3>
+            <form id="form" action="{{ url_for('index') }}" , method="POST">
+                <label for="exampleInputname1">Name</label>
+                <input class="text_input" placeholder="name" type="text" name="name" id="exampleInputname1">
 
-                    <label for="exampleInputsubject" >Subject</label>
-                    <input  class="text_input" placeholder="subject"  type="text" name="subject" id="exampleInputsubject">
+                <label for="exampleInputsubject">Subject</label>
+                <input class="text_input" placeholder="subject" type="text" name="subject" id="exampleInputsubject">
 
-                    <label for="exampleInputemail" >Email</label>
-                    <input  class="text_input" placeholder="email" type="text" name="email" id="exampleInputemail" >
+                <label for="exampleInputemail">Email</label>
+                <input class="text_input" placeholder="email" type="text" name="email" id="exampleInputemail">
 
-                    
-                    <label for="exampleInputmessage" >Message</label>
-                    <textarea  class="text_input"  name="message"  id="exampleInputmessage" ></textarea>
 
-                    <!-- <input id="submit_btn" type="submit" value="send"> -->
-                    <button  id="submit_btn" type="submit" class="bt ">send</button>
+                <label for="exampleInputmessage">Message</label>
+                <textarea class="text_input" name="message" id="exampleInputmessage"></textarea>
 
-                </form>
+                <!-- <input id="submit_btn" type="submit" value="send"> -->
+                <button id="submit_btn" type="submit" class="bt ">Send</button>
+
+            </form>
 
 
         </div>
     </section>
 
-  <script src="/static/script.js">
+    <script src="/static/script.js">
 
-  </script>
+    </script>
 
 </body>
 

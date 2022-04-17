@@ -1,15 +1,16 @@
 console.log('it working ');
 
-
+// setting and storing  theme color in local storage
 let theme=localStorage.getItem('theme')
 
-if (theme=null){
+if (theme==null){
     setTheme('light')
 }
 else{
     setTheme(theme)
 }
-
+ 
+// creating click option
 let themeDots = document.getElementsByClassName('theme')
 
 for (var i = 0; themeDots.length > i; i++) {
@@ -20,6 +21,7 @@ for (var i = 0; themeDots.length > i; i++) {
     })
 }
 
+// obtaining theme color from there css
 function setTheme(mode) {
     if (mode == 'light') {
         document.getElementById('light_theme').href = "/static/style.css"
@@ -34,6 +36,7 @@ function setTheme(mode) {
     if (mode == 'green') {
         document.getElementById('light_theme').href = "/static/green.css"
     }
-
+   
+    // storing theme color from local storage 
     localStorage.setItem('theme',mode)
 }
