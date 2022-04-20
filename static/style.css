@@ -375,3 +375,18 @@ h6 {
         justify-content:center ;
     }
 }
+
+@media screen and (max-width:300px) {
+    .intro_wrapper {
+     
+        grid-template-columns: 1fr ;
+        grid-template-areas:
+            'nav_wrapper '
+            'left_column '
+            'right_column'
+        ;
+    }
+    .right_column{
+        justify-content:center ;
+    }
+}
