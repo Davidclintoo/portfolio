@@ -27,7 +27,8 @@ conn=psycopg2.connect("dbname='d1m8odf2nbe0jt' user='idlxsyofckzrsu' port='5432 
 
 @app.route("/index", methods=['GET','POST']) 
 def index():
-    if request.method=='post' :
+    ms=''
+    if request.method=='post'  :
        cur=conn.cursor()
 
        name=request.form['name']
@@ -40,8 +41,10 @@ def index():
        cur.execute(rows,quary)
 
        conn.commit()
-
-    return render_template ('index.html'  )
+      
+      
+          
+    return render_template ('index.html' , ms=ms )
     
 
 if __name__ == '__main__':
