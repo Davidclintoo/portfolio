@@ -101,8 +101,46 @@ h6 {
     display: grid;
     text-align: center;
 
-    min-height: 10em;
+    
 }
+
+@keyframes greeding_wrapper {
+    from{ width:0 ;}
+}
+
+
+
+
+.typing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10em;
+
+  }
+  
+  .typing-effect {
+    width: 22ch;
+
+    animation: typing 5s steps(19), effect .10s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes effect {
+    50% {
+      border-color: transparent
+    }
+  }
 
 .intro_wrapper {
     background-color: var(--secondaryColor);
@@ -239,7 +277,7 @@ h6 {
 #previewShadow{
     background-color:var(--previewShadow) ;
     width:250px ;
-    height:120px ;
+    height:220px ;
     padding-left:30px ;
     padding-top:30px ;
 }
